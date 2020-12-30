@@ -35,11 +35,12 @@ const contenido = document.querySelector('#contenido');
           <th scope="row">${product.idProducto}</th>
           <td>${product.nombreProducto} </td>
           <td>${product.precioProducto}</td>
-          <td>${product.fechaVencimiento}</td>
+
            
         </tr>
-          `
-          }
+        `
+        // <td>${product.fechaVencimiento}</td>
+    }
       }
       if(resultado.innerHTML ===''){
           resultado.innerHTML +=`
@@ -70,7 +71,7 @@ formularioEdit.addEventListener('submit',function(event){
              console.log('id: ',datosEdit.get('idProducto'));
    console.log('nombre: ',datosEdit.get('nombreProducto'));
    console.log('precio: ',datosEdit.get('precioProducto'));
-   console.log('fecha: ',datosEdit.get('fechaVencimiento'));
+//    console.log('fecha: ',datosEdit.get('fechaVencimiento'));
 
    fetch(edit,{
 
@@ -78,7 +79,7 @@ formularioEdit.addEventListener('submit',function(event){
        body: JSON.stringify({
            nombreProducto:datosEdit.get('nombreProducto'),
            precioProducto:datosEdit.get('precioProducto'),
-           fechaVencimiento:datosEdit.get('fechaVencimiento')
+        //    fechaVencimiento:datosEdit.get('fechaVencimiento')
        }) ,
        headers:{
        'Content-Type':'application/json; charset=UTF-8'
@@ -91,4 +92,6 @@ formularioEdit.addEventListener('submit',function(event){
        console.log('los datos enviados son: ',data);
        alert('datos enviado correctamente')
    })
+   alert('datos enviado incorrectamente')
+
 })

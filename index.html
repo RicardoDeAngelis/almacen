@@ -21,7 +21,7 @@
      <!-- margin top 5 -->
      <div class="container mt-5">
         <h1> Buscador de productos</h1>
-        <input type="text" id="form" class="form-control my-2">
+        <input type="text" placeholder="Ingresa el nombre del producto a buscar" id="form" class="form-control my-2">
         <button class="btn btn-info mb-2 w-100" id="boton" >Buscar</button>
            <ul id="resultado">
                
@@ -38,7 +38,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Precio</th>
-                <th scope="col">Fecha</th>
+                <!-- <th scope="col">Fecha</th> -->
                 <!-- <th scope="col">Eliminar</th> -->
                 
 
@@ -53,36 +53,15 @@
 
     </div>
 
- </div>
-
+ 
     
-
-     <h2> <strong>Crear producto</strong></h2>
-    <form  id="formulario">
-        
-   
-        <!-- <p><label >Id del producto:</label>
-            <input type="number" name="idProducto" 
-            placeholder="_Id del producto" class="form-control my-2"></p>
-     -->
-        
-        <p><label >Nombre del producto:</label>
-        <input type="text" name="nombreProducto" placeholder="nombre del producto" class="form-control my-2"></p>
-
-        <p><label >Precio del producto:</label>
-        <input type="number" name="precioProducto" 
-        step="0.001" placeholder="Precio del producto" class="form-control my-2"></p>
-
-        <p><label >Fecha de vencimiento:</label>
-            <input type="date" name="fechaVencimiento" class="form-control my-2"></p>
-        <button class="btn btn-info mb-2 w-100" type="submit">Guardar</button> 
-       </form>
-
+        <a href="crear.html"><input type="button" value="Ir a crear un producto" class="btn btn-info"></a>
        <a href="editar.html"><input type="button" value="Ir a editar un producto" class="btn btn-info"></a>
-       <a href="eliminar.html"><input type="button" value="Ir a eliminar un producto" class="btn btn-info"></a>
+       <!-- <a href="eliminar.html"><input type="button" value="Ir a eliminar un producto" class="btn btn-info"></a> -->
+       <!-- <a href="categoria.html"><input type="button" value="Ir a crear una categoria de un producto" class="btn btn-info"></a> -->
     
     </div>
-    
+     </div>
     <link rel="stylesheet" href="Css/styles.css">
 
     <script src="Js/home.js"></script>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar</title>
+    <title>Categoria</title>
 
     <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
@@ -32,7 +32,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Precio</th>
-                <!-- <th scope="col">Fecha</th> -->
+                <th scope="col">Fecha</th>
                 <!-- <th scope="col">Eliminar</th> -->
                 
 
@@ -45,33 +45,22 @@
             </tbody>
           </table>
     
-    <h2> <strong>Editar producto</strong></h2>
-    <form  id="formularioEdit">
+    <h2> <strong>Eliminar producto</strong></h2>
+    <form  id="formularioE">
         
    
-        <p><label >Id del producto:</label>
+        <p><label >Ingresa el id del producto a eliminar:</label>
             <input type="number" name="idProducto" 
             placeholder="Id del producto" class="form-control my-2"></p>
-    
-        
-        <p><label >Nombre del producto:</label>
-        <input type="text" name="nombreProducto" placeholder="nombre del producto" class="form-control my-2"></p>
+            <button class="btn btn-danger mb-2 w-100" type="submit">Eliminar</button> 
 
-        <p><label >Precio del producto:</label>
-        <input type="number" name="precioProducto" 
-        step="0.001" placeholder="Precio del producto" class="form-control my-2"></p>
+       </form>
 
-        <!-- <p><label >Fecha de vencimiento:</label>
-            <input type="date" name="fechaVencimiento" class="form-control my-2"></p> -->
-        <button class="btn btn-danger mb-2 w-100" type="submit">Actualizar</button> 
-        <a href="index.html"><input type="button" value="Ir a home" class="btn btn-info"></a>
-    </form>
-
-      
+       <a href="index.html"><input type="button" value="Ir a home" class="btn btn-info"></a>
 
         </div>
        <link rel="stylesheet" href="Css/styles.css">
 
-       <script src="Js/editar.js"></script>
+       <script src="Js/eliminar.js"></script>
 </body>
 </html>
