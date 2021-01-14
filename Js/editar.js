@@ -92,6 +92,5 @@ formularioEdit.addEventListener('submit',function(event){
        console.log('los datos enviados son: ',data);
        alert('datos enviado correctamente')
    })
-   alert('datos enviado incorrectamente')
 
 })
